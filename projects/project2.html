@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-page="project1">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="pageTitle">Project 1 - My Portfolio</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>{MG}</h1>
+            </div>
+            <div class="language-switcher">
+                <select id="language-select" onchange="setLanguage(this.value)">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                </select>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html" data-translate="home">Inicio</a></li>
+                    <li><a href="project1.html" data-translate="project1">Proyecto 1</a></li>
+                    <li><a href="project2.html" data-translate="project2">Proyecto 2</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2 data-translate="textAnalyzer">Text Analyzer</h2>
+            <p data-translate="description">Description: An e-commerce website built for small businesses to sell products online. The website features a user-friendly interface, shopping cart functionality, and secure payment processing.</p>
+            <p data-translate="technologies">Technologies Used: HTML, CSS, JavaScript</p>
+            <p><a href="https://example.com" data-translate="liveProject">Live Project</a></p>
+            <p><a href="https://github.com/yourusername/online-store" data-translate="githubRepository">GitHub Repository</a></p>
+            <img class="gilmoregirls" src="../images/gilmoregirls.png" alt="Screenshot de Gilmore Girls Serie">
+            <p data-translate="screenshotDescription">Screenshot Gilmore Girls Serie</p>
+        </section>
+    </main>
+    <footer>
+        <p data-translate="contact">Contact: mbguzman.099@gmail.com</p>
+    </footer>
+    <script src="../scripts/views.js"></script>
+</body>
+</html>

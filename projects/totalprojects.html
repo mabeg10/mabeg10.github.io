@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 - My Portfolio</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body data-page="projects">
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>{MG}</h1>
+            </div>
+            <div class="language-switcher">
+                <select id="language-select" onchange="setLanguage(this.value)">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                </select>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html" data-translate="home">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2 data-translate="projectsTitle">Projects</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <a href="project1.html">
+                        <img src="../images/textanalizer.png" alt="Text Analyzer">
+                        <div class="project-info">
+                            <h3 data-translate="textAnalyzer">Text Analyzer</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card">
+                    <a href="project2.html">
+                        <img src="../images/gilmoregirls.png" alt="Dataverse Chat">
+                        <div class="project-info">
+                            <h3 data-translate="dataverseChat">Dataverse Chat</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <footer>
+            <p data-translate="contact">Contact: mbguzman.099@gmail.com</p>
+        </footer>
+            
+    <script src="../scripts/views.js"></script>
+</body>
+</html>
