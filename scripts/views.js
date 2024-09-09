@@ -12,7 +12,7 @@ const translations = {
         liveProject: 'Live Project',
         githubRepository: 'GitHub Repository',
         screenshotDescription: 'Screenshot Gilmore Girls Serie',
-        contact: 'Contact'    
+        contact: 'Contact: mbguzman.099@gmail.com'    
     },
     es: {
         home: 'Inicio',
@@ -26,7 +26,7 @@ const translations = {
         liveProject: 'Página del Proyecto',
         githubRepository: 'Repositorio en GitHub',
         screenshotDescription: 'Captura de Pantalla Analizador de Texto',
-        contact: 'Contacto'
+        contact: 'Contacto: mbguzman.099@gmail.com'
     }
 };
 
@@ -46,6 +46,7 @@ function setLanguage(language) {
         if (translations[language][pageTitleKey]) {
             titleElement.textContent = translations[language][pageTitleKey];
         }
+    
     }
 
     localStorage.setItem('language', language);

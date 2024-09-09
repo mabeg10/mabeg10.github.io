@@ -27,7 +27,7 @@ header {
 }
 .logo {
     margin-right: 0;
-    font-size: 18px; 
+    font-size: 20px; 
     
 }
 
@@ -135,7 +135,7 @@ section {
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
-    width: 300px; /* Ajusta el ancho según tu preferencia */
+    width: 300px; 
 }
 
 .project-card:hover {
@@ -196,8 +196,8 @@ footer {
 }
 
 .skills i {
-    font-size: 36px; /* Ajusta el tamaño según sea necesario */
-    margin: 10px; /* Espaciado entre los iconos */
+    font-size: 36px; 
+    margin: 10px; 
 }
 
 
@@ -227,7 +227,7 @@ footer {
 }
 @media (max-width: 575px) {
     .container-one {
-        flex-direction: row; /* Alinea horizontalmente en pantallas pequeñas */
+        flex-direction: column; 
         justify-content: center;
     }
 
