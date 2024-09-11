@@ -5,7 +5,7 @@ const translations = {
         home: 'Home',
         projects: 'Projects',
         skills: 'Skills',
-        about: 'I am a Fullstack Developer specializing in HTML, CSS, and JavaScript, with a background in Educommunication, art, and culture. I am passionate about creating and optimizing interactive websites by merging technology with my expertise in graphic design and social media. My top priority is to ensure that the user experience is both intuitive and functional. I adapt swiftly and excel in collaborative settings. My continuous commitment to learning and professional growth drives me to develop innovative and creative solutions for the tech industry.'
+        about: "I'm Fullstack Developer specializing in HTML, CSS, and JavaScript, with a background in Educommunication, art, and culture. I'm passionate about creating and optimizing interactive websites by merging technology with my expertise in graphic design and social media. My top priority is to ensure that the user experience is both intuitive and functional. I adapt swiftly and excel in collaborative settings. My continuous commitment to learning and professional growth drives me to develop innovative and creative solutions for the tech industry."
     },
     es: {
         home: 'Inicio',
