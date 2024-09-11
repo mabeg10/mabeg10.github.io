@@ -4,27 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1 - My Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body data-page="projects">
     <header>
         <div class="header-container">
-            <div class="logo">
-                <h1>{MG}</h1>
+            <div class="container-one">
+                <div class="logo">
+                    <h1>{MG}</h1>
+                </div>
+                <div class="language-switcher">
+                    <select id="language-select" onchange="setLanguage(this.value)">
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                    </select>
+                </div>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
-            <div class="language-switcher">
-                <select id="language-select" onchange="setLanguage(this.value)">
-                    <option value="en">English</option>
-                    <option value="es">Español</option>
-                </select>
-            </div>
-            <nav>
+            <nav id="nav-menu">
                 <ul>
                     <li><a href="../index.html" data-translate="home">Home</a></li>
+                    <li><a href="totalprojects.html" data-translate="projects">Projects</a></li>
+                    <li><a href="skills.html" data-translate="skills">Skills</a></li>
                 </ul>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/mariaguzman-developer/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/mabeg10" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
             </nav>
         </div>
-    </header>
+    </header>    
     <main>
         <section>
             <h2 data-translate="projectsTitle">Projects</h2>

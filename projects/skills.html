@@ -10,22 +10,38 @@
 <body>
     <header>
         <div class="header-container">
-            <div class="logo">
-                <h1>{MG}</h1>
+            <div class="container-one">
+                <div class="logo">
+                    <h1>{MG}</h1>
+                </div>
+                <div class="language-switcher">
+                    <select id="language-select" onchange="setLanguage(this.value)">
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                    </select>
+                </div>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
-            <div class="language-switcher">
-                <select id="language-select" onchange="setLanguage(this.value)">
-                    <option value="en">English</option>
-                    <option value="es">Español</option>
-                </select>
-            </div>
-            <nav>
+            <nav id="nav-menu">
                 <ul>
                     <li><a href="../index.html" data-translate="home">Home</a></li>
+                    <li><a href="../projects/totalprojects.html" data-translate="projects">Projects</a></li>
+                    <li><a href="../projects/skills.html" data-translate="skills">Skills</a></li>
                 </ul>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/mariaguzman-developer/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/mabeg10" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
             </nav>
         </div>
     </header>
+    
     <main>
         <section>
             <h2 data-translate="skillsTitle">Habilidades</h2>

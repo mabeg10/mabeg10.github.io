@@ -11,22 +11,25 @@
     <header>
         <div class="header-container">
             <div class="container-one">
-             <div class="logo">
-                <h1>{MG}</h1>
-             </div>
-            <div class="language-switcher">
-                <select id="language-select" onchange="setLanguage(this.value)">
-                    <option value="en">English</option>
-                    <option value="es">Español</option>
-                </select>
+                <div class="logo">
+                    <h1>{MG}</h1>
+                </div>
+                <div class="language-switcher">
+                    <select id="language-select" onchange="setLanguage(this.value)">
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                    </select>
+                </div>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
-        </div>
-            <nav>
+            <nav id="nav-menu">
                 <ul>
                     <li><a href="index.html" data-translate="home">Home</a></li>
                     <li><a href="projects/totalprojects.html" data-translate="projects">Projects</a></li>
                     <li><a href="projects/skills.html" data-translate="skills">Skills</a></li>
-                </ul> 
+                </ul>
                 <div class="social-icons">
                     <a href="https://www.linkedin.com/in/mariaguzman-developer/" target="_blank">
                         <i class="fab fa-linkedin"></i>
@@ -37,12 +40,12 @@
                 </div>
             </nav>
         </div>
-    </header>
+    </header>    
     <main>
         <section>
             <img class="profile-picture" src="images/fotoperfil.png" alt="Profile Picture">
             <h2 class="my-name" data-translate="myName">María Belén Guzmán</h2>
-            <p class="about-me" data-translate="about">I'm a Fullstack Developer specializing in HTML, CSS, and JavaScript, with a background in Educommunication, art, and culture. I'm passionate about creating and optimizing interactive websites by merging technology with my expertise in graphic design and social media. My top priority is to ensure that the user experience is both intuitive and functional. I adapt swiftly and excel in collaborative settings. My continuous commitment to learning and professional growth drives me to develop innovative and creative solutions for the tech industry.</p>
+            <p class="about-me" data-translate="about">I'm a Fullstack Developer specializing in HTML, CSS, and JavaScript, with a background in Educommunication, art, and culture. I'm passionate about creating and optimizing interactive websites by merging technology with my expertise in graphic design and social media. Ensuring that the user experience is intuitive and functional is my priority. I'm quick to adapt and effective working in collaborative spaces. My constant commitment to learning and professional development motivates me to create innovative and creative solutions for the technology world.</p>
         </section>
         <section>
             <h2 class="projects-title" data-translate="projectsTitle">Projects</h2>

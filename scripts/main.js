@@ -1,11 +1,10 @@
-// main.js
 
 const translations = {
     en: {
         home: 'Home',
         projects: 'Projects',
         skills: 'Skills',
-        about: "I'm Fullstack Developer specializing in HTML, CSS, and JavaScript, with a background in Educommunication, art, and culture. I'm passionate about creating and optimizing interactive websites by merging technology with my expertise in graphic design and social media. My top priority is to ensure that the user experience is both intuitive and functional. I adapt swiftly and excel in collaborative settings. My continuous commitment to learning and professional growth drives me to develop innovative and creative solutions for the tech industry."
+        about: "I'm a Fullstack Developer specializing in HTML, CSS, and JavaScript, with a background in Educommunication, art, and culture. I'm passionate about creating and optimizing interactive websites by merging technology with my expertise in graphic design and social media. Ensuring that the user experience is intuitive and functional is my priority. I'm quick to adapt and effective working in collaborative spaces. My constant commitment to learning and professional development motivates me to create innovative and creative solutions for the technology world"
     },
     es: {
         home: 'Inicio',
@@ -29,3 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('language-select').value = savedLanguage;
     setLanguage(savedLanguage);
 });
+
+function toggleMenu() {
+    const menu = document.getElementById('nav-menu');
+    menu.classList.toggle('show');
+}
