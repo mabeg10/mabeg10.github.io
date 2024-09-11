@@ -7,12 +7,8 @@ const translations = {
         textAnalyzer: 'Text Analyzer',
         dataverseChat: 'Dataverse Chat',
         skillsTitle: 'Skills',
-        description: 'Description: An e-commerce website built for small businesses to sell products online. The website features a user-friendly interface, shopping cart functionality, and secure payment processing.',
-        technologiesUsed: 'Technologies Used: HTML, CSS, JavaScript',
-        liveProject: 'Live Project',
-        githubRepository: 'GitHub Repository',
-        screenshotDescription: 'Screenshot Gilmore Girls Serie',
-        contact: 'Contact'    
+        skills:'Skills',
+        contact: 'Contact: mbguzman.099@gmail.com'    
     },
     es: {
         home: 'Inicio',
@@ -21,12 +17,8 @@ const translations = {
         textAnalyzer: 'Analizador de Texto',
         dataverseChat: 'Dataverse Chat',
         skillsTitle: 'Habilidades',
-        description: 'Descripción: Aplicación web de análisis de texto que proporciona métricas detalladas sobre la estructura y el contenido de un texto. La herramienta permite ingresar un texto y ofrece en tiempo real datos como el recuento de palabras, caracteres, la suma total de números, y la longitud media de las palabras.',
-        technologiesUsed: 'Tecnologías usadas: HTML, CSS, JavaScript',
-        liveProject: 'Página del Proyecto',
-        githubRepository: 'Repositorio en GitHub',
-        screenshotDescription: 'Captura de Pantalla Analizador de Texto',
-        contact: 'Contacto'
+        skills: 'Habilidades',
+        contact: 'Contacto: mbguzman.099@gmail.com'
     }
 };
 
@@ -46,6 +38,7 @@ function setLanguage(language) {
         if (translations[language][pageTitleKey]) {
             titleElement.textContent = translations[language][pageTitleKey];
         }
+    
     }
 
     localStorage.setItem('language', language);
@@ -57,3 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('language-select').value = savedLanguage;
     setLanguage(savedLanguage);
 });
+
+function toggleMenu() {
+    const menu = document.getElementById('nav-menu');
+    menu.classList.toggle('show');
+}

@@ -11,22 +11,25 @@
     <header>
         <div class="header-container">
             <div class="container-one">
-             <div class="logo">
-                <h1>{MG}</h1>
-             </div>
-            <div class="language-switcher">
-                <select id="language-select" onchange="setLanguage(this.value)">
-                    <option value="en">English</option>
-                    <option value="es">Español</option>
-                </select>
+                <div class="logo">
+                    <h1>{MG}</h1>
+                </div>
+                <div class="language-switcher">
+                    <select id="language-select" onchange="setLanguage(this.value)">
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                    </select>
+                </div>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
-        </div>
-            <nav>
+            <nav id="nav-menu">
                 <ul>
                     <li><a href="index.html" data-translate="home">Home</a></li>
                     <li><a href="projects/totalprojects.html" data-translate="projects">Projects</a></li>
                     <li><a href="projects/skills.html" data-translate="skills">Skills</a></li>
-                </ul> 
+                </ul>
                 <div class="social-icons">
                     <a href="https://www.linkedin.com/in/mariaguzman-developer/" target="_blank">
                         <i class="fab fa-linkedin"></i>
@@ -37,32 +40,48 @@
                 </div>
             </nav>
         </div>
-    </header>
+    </header>    
     <main>
         <section>
             <img class="profile-picture" src="images/fotoperfil.png" alt="Profile Picture">
             <h2 class="my-name" data-translate="myName">María Belén Guzmán</h2>
-            <p class="about-me" data-translate="about">I'm a Fullstack Developer specializing in HTML, CSS, and JavaScript, with a background in Educommunication, art, and culture. I'm passionate about creating and optimizing interactive websites by merging technology with my expertise in graphic design and social media. My top priority is to ensure that the user experience is both intuitive and functional. I adapt swiftly and excel in collaborative settings. My continuous commitment to learning and professional growth drives me to develop innovative and creative solutions for the tech industry.</p>
+            <p class="about-me" data-translate="about">I'm a Fullstack Developer specializing in HTML, CSS, and JavaScript, with a background in Educommunication, art, and culture. I'm passionate about creating and optimizing interactive websites by merging technology with my expertise in graphic design and social media. Ensuring that the user experience is intuitive and functional is my priority. I'm quick to adapt and effective working in collaborative spaces. My constant commitment to learning and professional development motivates me to create innovative and creative solutions for the technology world.</p>
         </section>
         <section>
             <h2 class="projects-title" data-translate="projectsTitle">Projects</h2>
             <div class="projects-container">
                 <div class="project-card">
-                    <a href="projects/project1.html">
-                        <img src="images/textanalizer.png" alt="Text Analyzer">
+                        <img src="../images/textanalizer.png" alt="Text Analyzer">
                         <div class="project-info">
                             <h3 data-translate="textAnalyzer">Text Analyzer</h3>
+                            <a href="https://github.com/mabeg10/DEV014-text-analyzer" class="button-one">GitHub</a>
+                        <a href="https://mabeg10.github.io/DEV014-text-analyzer/" class="button-two">Demo</a>
                         </div>
                     </a>
                 </div>
                 <div class="project-card">
-                    <a href="projects/project2.html">
-                        <img src="images/gilmoregirls.png" alt="Dataverse Chat">
+                        <img src="../images/gilmoregirls.png" alt="Dataverse Chat">
                         <div class="project-info">
                             <h3 data-translate="dataverseChat">Dataverse Chat</h3>
+                            <a href="https://github.com/mabeg10/DEV014-dataverse-chat" class="button-one">GitHub</a>
+                            <a href="https://gilmore-girls.netlify.app" class="button-two">Demo</a>
                         </div>
                     </a>
                 </div>
+                <div class="project-card">
+                    <img src="../images/guessthenumber.gif" alt="Guess The Number">
+                    <div class="project-info">
+                        <h3 data-translate="guessTheNumber">Guess The Number</h3>
+                        <a href="https://github.com/mabeg10/DEV014-guess-the-number" class="button-one">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="../images/fleetmanagementapi.png" alt="Fleet Management API">
+                    <div class="project-info">
+                        <h3 data-translate="fleetManagementAPI">Fleet Management API</h3>
+                        <a href="https://github.com/mabeg10/Fleet-Management-Software-API-NodeJS-Sample-Implementation-" class="button-one">GitHub</a>
+                    </div>  
             </div>
         </section>
     </main>
