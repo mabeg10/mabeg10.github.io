@@ -112,8 +112,7 @@ section {
     margin-right: 5%;
     margin-left: 10%;
     margin-right: 10%;
-    text-align: justify;
-   
+    text-align: justify; 
 }
 /* Proyectos */
 .projects-title {
@@ -123,7 +122,9 @@ section {
     padding-left:10px;
 
 }
-    
+.titles {
+    margin-left: 10px;
+}   
 
 .projects-container {
     display: flex;
@@ -289,7 +290,16 @@ footer {
         gap: 15px; /* Espacio entre los elementos */
         font-size: 20px; 
     }
+    
+    .titles {
+        margin-left: 10px;
 
+    }
+    .about-me {
+        text-align: left;
+        margin-left: 20px;
+        padding: 0 10px; 
+    }
     .social-icons {
         margin-top: 10px; 
         display: flex;
